@@ -1,0 +1,43 @@
+.img {
+    width: 80px;
+    height: 80px;
+}
+
+#main{
+    background-color: #eee;
+    border-right: #999;
+    padding: 20px;
+    overflow:scroll;
+}
+.left .img {
+    margin-right: 10px;
+    float: left;
+}
+
+.left,.right,.mid {
+    background-color: #fff;
+    border: #999 solid thin;
+    padding: 20px;
+}
+
+.left {
+    width: 200px;
+    float: left;
+}
+
+.mid {
+    margin-left: 260px;
+    margin-right: 140px;
+}
+.right{
+    width: 120px;
+    float:right;
+    text-align: center;
+    padding: 0px;
+}
+
+
+.right .img{
+    margin: 15px;
+}
+

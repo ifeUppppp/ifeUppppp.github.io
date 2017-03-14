@@ -1,0 +1,49 @@
+div {
+    width: 150px;
+    border: 0.1px solid red;
+    margin-bottom: 20px;
+}
+body {
+    display: flex;
+    padding: 20px;
+}
+.one {
+    height: 120px;
+}
+.two {
+    height: 100px;
+}
+.three {
+    height: 40px;
+}
+.blue {
+    height: 200px;
+    border: 0.1px solid blue;
+}
+
+@media (min-width:641px) {
+    body {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width:640px) {
+    body {
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+    .blue {
+        order:1;
+    }
+    .one {
+        order:2;
+    }
+    .two {
+        order:3;
+    }
+    .three {
+        order: 4;
+    }
+}

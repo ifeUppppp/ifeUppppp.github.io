@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    min-width: 1366px;
+}
+
+header {
+    width: 100%;
+    background-color: #1d92af;
+    height: 50px;
+    position: relative;
+    vertical-align: middle;
+}
+header input,a {
+    position: absolute;
+}
+header img {
+    margin-left: 5%;
+    padding-top: 5px;
+}
+header input {
+    padding: 0 10px;
+    right: 100px;
+    top: 15px;
+    width: 25%;
+    height: 20px;
+    border-radius: 20px;
+    border-style: none;
+    background-image: url(img/logo.png) no-repeat 5%;
+}
+header a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    top: 17px;
+    right: 40px;
+}
+
+aside {
+    float: left;
+    color: white;
+    width: 230px;
+    height: 1080px;
+    background-color: #2c2828;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+}
+aside .infor,.star,.fans {
+    text-align: center;
+}
+.infor img {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.infor .outline{
+    border: 1.7px solid white;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 53px;
+}
+aside li {
+    list-style: 
+}
+aside .star,.fans {
+    color: dimgray;
+    margin-top: 30px;
+    width: 80px;
+    font-size: 15px;
+    display: inline-block;
+}
+aside .star {
+    border-right:2px solid dimgray;
+}
+aside a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+aside ul {
+    text-align: left;
+    width: 100%;
+    list-style: circle;
+    padding-top: 30px;
+}
+aside ul.level-1>li {
+    padding:5px 0 5px 40px;
+    line-height: 36px;
+}
+.down li{
+    padding-left: 30px;
+}
+.list-focus {
+    background-color: rgba(255,255,255,0.5);
+}
+
+main {
+    background-color:#ebe9d9;
+    float: left;
+    width: 1120px;
+    height: 1080px;
+}
+.topbread,.main-content,.search,.history,.statics,.projects {
+    width: 100%;
+}
+.topbread,.search,.history,.projects {
+    margin-bottom: 10px;
+}
+main .topbread{
+    background-color: white;
+    box-shadow: 0 0 5px #aaa;
+    padding: 0 20px;
+}
+main .topbread ul li {
+    display: inline-block;
+    font-size: .75rem;
+    line-height: 30px;
+    color: gray;
+    cursor: pointer;
+}
+main .topbread ul li:after {
+    content:"/";
+    padding: 0 5px;
+}
+main .topbread ul li:last-child:after {
+    content:"";
+}
+.main-content {
+    padding: 10px 50px;
+}
+
+.search {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    font-size: 0.8rem;
+}
+.search label {
+    color: grey;
+}
+.search .what,.search button {
+    flex:1;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.search .sell,.search .other {
+    flex:2;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.search button {
+    background-color: #1d92af;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+}
+.time>div,.other2>div {
+    display: inline-block;
+    margin-left: 10px;
+}
+.history{
+    display: flex;
+    height: 60px;
+}
+
+.history ul {
+    display: inline-block;
+}
+
+.history div{
+    display: inline-block;
+    background-color: white;
+    height: 60px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.history .price div {
+    padding: 0 30px;
+    border-top: 5px solid white;
+}
+
+.history .price div:hover, .history .price div.selected {
+    border-top: 5px solid #1d92af;
+}
+
+.history .price strong {
+    color: darkorange;
+    font-size: 1.4rem;
+}
+.history .price b {
+    color: grey;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.history .flex-sf-1{
+    flex:1;
+}
+.history .flex-sf-2 {
+    flex:4;
+}
+.history .historysearch  {
+    color: gray;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 0;
+}
+.statics {
+    height: 100px;
+}
+.statics .title {
+    color: black;
+    line-height: 30px;
+}
+.statics .statics-all {
+    display: flex;
+}
+.statics .statics-all > div {
+    flex:1;
+    background-color: white;
+    height: 80px;
+    margin-right: 30px;
+    width: 100%;
+    padding: 20px;
+}
+.statics .inner {
+    width:60px;
+    height: 45px;
+    float: right;
+}
+.green {
+    border-left: 5px solid #16b252;
+}
+.green .inner {
+    background-color: #16b252;
+}
+.red {
+    border-left: 5px solid #f84e4e;
+}
+.red .inner {
+    background-color: #f84e4e;
+}
+.yellow .inner {
+    background-color: #ebd630;
+}
+.yellow {
+    border-left: 5px solid #ebd630;
+}
+.blue {
+    border-left: 5px solid #1d92af;
+}
+.blue .inner {
+    background-color: #1d92af;
+}
+.statics h6 {
+    float: left;
+}
+.statics span {
+    float: left;
+    clear: left;
+    margin-top: 10px;
+    color: gray;
+    font-size: 0.35rem;
+}
+.statics .statics-all div:last-child{
+    margin-right: 0;
+}
+.projects {
+    display: flex;
+    width: 100%;
+    
+    height: 340px;
+    margin-top: 30px;
+}
+.projects>div {
+    border-radius: 7px;
+    box-shadow: 0 0 1px #aaa;
+    background-color: white;
+}
+
+.projects .flex-sf-4 {
+    flex:4;
+}
+.projects .flex-sf-6 {
+    flex:6;
+}
+.projects>div .title {
+    background-color: #eaeaea;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 0.75rem;
+    color: gray;
+    border-bottom: 1px solid #dedddd;
+}
+.projects .projects-item {
+    margin-right: 18px;    
+}
+.projects .projects-items .project-item {
+    padding: 15px;
+    width: 100%;
+}
+.projects .project-item ul li {
+    display: inline-block;
+    position: relative;
+    width: 90px;
+    line-height: 30px;
+    text-align: center;
+}
+.projects .project-item ul li span {
+    display: block;
+    font-size: 0.9rem;
+    position: relative;
+    color: #747272;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ededf0;
+    border-radius: 5px;
+    z-index: 5;
+    
+}
+.projects .project-item ul li input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+}
+.projects .project-item ul li input:hover {
+    cursor: pointer;
+}
+.projects .project-item .tab {
+    width: 480px;
+    height: 270px;
+    padding: 30px;
+    position: absolute;
+    top: 31px;
+
+    border-radius: 0 10px 10px 10px;
+    z-index: 0;
+    display: none;
+}
+.projects .project-item .tab2 {
+    margin-left: -94px;
+}
+.projects .project-item .tab3 {
+    margin-left: -188px;
+}
+.projects .project-item .tab4{
+    margin-left: -282px;
+}
+.projects .project-item .tab5 {
+    margin-left: -376px;
+}
+.projects .project-item ul li input:checked + span + div.tab {
+    display: block;
+}
+.projects .project-item ul li input:checked + span {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+.projects .project-item table {
+    border-collapse: collapse;
+    font-size: .75rem;
+    text-align: center;
+    color: gray;
+    width: 100%;
+}
+.projects .project-item table td {
+    border: 1px solid gray;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.projects .project-item table td:hover {
+    background-color: rgba(178, 34, 34,0.5);
+}
+
+
+
+
+
+
+
+
+
+.projects .project-detail .content {
+    padding: 20px 40px;
+    text-align:left;
+}
+.projects .project-detail .content table {
+    width: 100%;
+    font-size: 13px;
+}
+.projects .project-detail .content table th {
+    line-height: 18px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.projects .project-detail .content table td {
+    line-height: 18px;
+    border-top: 1px solid #aaa;
+    padding: 5px;
+}
+.projects .project-detail .content table span {
+    color: #aaa;
+    display: block;
+}
+.projects .project-detail .content table .detail {
+    padding-bottom: 80px;
+}
+.projects .project-detail .content table td.price {
+    border-right: 1px solid #aaa;
+}
+.projects .project-detail .secret {
+    padding-top: 2px;
+    color: grey;
+    border-left: 20px solid gray;
+}
+.projects .project-detail .secret input {
+    background-color: dimgray;
+    position: relative;
+    margin-left: -19px;
+    margin-right: 17px;
+    width: 20px;
+    height: 15px;
+    opacity: 0;
+}
+.projects .project-detail .secret input:hover {
+    opacity: 100;
+}
+.projects .project-detail .search-btn {
+    background-color: dodgerblue;
+    cursor: pointer;
+    line-height: 23px;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    float: right;
+    padding: 0 10px;
+}
+
+.projects .calendar{
+    margin-right: 18px;
+}
+.projects .calendar .content {
+    padding: 20px;
+}
+
+.projects .calendar .content .calendar-item{
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+
+/*********************************/
+.btn-select {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    padding-left: 10px;
+    line-height: 25px;
+    border-radius: 1px;
+    border:1px solid #2a2e3d;
+    
+}
+.btn-select:hover { cursor:pointer;}
+.btn-select:hover .hidden-btn:checked +.dropdown{
+    display: block;
+}
+.btn-select i {
+    float: right;
+    line-height: 25px;
+    margin-right: 2px;
+}
+.btn-select .hidden-btn {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+.btn-select .hidden-btn:hover {
+    cursor: pointer;
+}
+.btn-select .dropdown {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    list-style: none;
+    box-shadow: 0px 0px 3px #aaa;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 999;
+}
+.btn-select .dropdown li {
+    padding-left: 10px;
+}
+.btn-select .dropdown li:hover {
+    background-color: #bababe;
+}
+/*********************************/
+
+.projects .calendar .calendar-table {
+    text-align: center;
+    width: 100%;
+    border-top: 1.5px solid #1d92af;
+}
+
+.calendar-table tr span {
+    display: block;
+    font-size: 0.9rem;
+}
+.calendar-table tr:first-child {
+    border-bottom: 1px solid black;
+}
+.calendar-table td {
+    padding: 4px;
+}
+.calendar-table td:nth-child(6) span,.calendar-table td:nth-child(7) span {
+    color: #e52b2b;
+}
+.calendar-table td.selected,.calendar-table td:hover {
+    color:white;
+    background-color: salmon;
+    border-radius: 60%;
+}
+
+
+.projects .top-cars .content {
+    padding: 20px 40px;
+    text-align: center;
+}
+.projects .top-cars table {
+    width: 100%;
+    line-height: 20px;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+}
+.projects .top-cars table td {
+    border: 2px solid #aaa;
+}
+.projects .top-cars .rank,.projects .top-cars .name {
+    width: 20%;
+}
+.projects .top-cars table .hot .hot-bar{
+    background-color: #d6d3d3;
+    width: 150px;
+    border-radius: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-left: 26px;
+    margin-bottom: 2px;
+}
+.hot-bar span {
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+}
+.projects .top-cars tr.selected,.projects .top-cars tr:hover {
+    background-color: #ef9e95;
+}
+.inner-75 { width: 75%; background-color: salmon;}
+.inner-70 {width: 70%; background-color: salmon;}
+.inner-65  {width: 65%;background-color: salmon;}
+.inner-60 {width: 60%; background-color: #2cbde2;}
+.inner-55 {width: 55%;background-color: #2cbde2;}
+.inner-50 {width: 50%;background-color: #2cbde2;}
+.inner-45 {width: 45%;background-color: #2cbde2;}
+.inner-40 {width: 40%;background-color: #2cbde2;}
+.inner-35 {width: 35%;background-color: #2cbde2;}

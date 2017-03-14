@@ -1,0 +1,47 @@
+
+.container {
+    position: relative;
+    background-color: #eee;
+    padding: 20px;
+    min-height: 420px;
+}
+.container div {
+    background-color: white;
+    border: 1px solid #999;
+}
+
+.one {
+    width: 160px;
+    position: absolute;
+    padding: 20px;
+}
+
+.one img {
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+}
+.one span {
+    margin-left: 20px;
+    font-size: 5px;
+}
+
+.two {
+    padding: 20px;
+    width: auto;
+    margin-left: 220px;
+    margin-right: 140px;
+}
+.three {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 80px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+}
+.three img {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+}

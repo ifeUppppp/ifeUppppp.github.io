@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+    border:1px solid #999;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    background-color: white;
+}
+.inner {
+    border:1px solid #999;
+    background-color: #b0cccc;
+    width: 100%;
+    height: 50px;
+}
+/* [class*='col-'] {}*/
+@media (min-width:769px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.664%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .col-sm-2{
+        width: 16.664%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+$height:50px;
+$pdValue:10px;
+$bgColor:#eee;
+$bdColor:#999;
+$bdWidth:1px;
+
+@mixin resetCSS {
+    margin:0;
+    padding: 0;
+}
+@mixin clearFix {
+    content: "";
+    display: table;
+    clear: both;
+}
+@mixin innerStyle {
+    background-color: $bgColor;
+    height: $height;
+    border: $bdWidth solid $bdColor;
+}
+@mixin outerStyle {
+    padding: $pdValue;
+    box-sizing: border-box;
+    float: left;
+}
+
+@mixin generateGrid(#scr_flag) {
+    @if $scr_flag {
+        @for $i from 1 through 12 {
+            .col-md-#{$i} {
+                width: (100%/12) *$i;
+            }
+        }
+    } @else {
+        @for $i from 1 through 12 {
+            .col-sm-#{$i} {
+                width: (100%/12)* $i;
+            }
+        }
+    }
+}
+
+
+
+html,body {
+    @include resetCSS;
+}
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+.wrapper:before,.wrapper:after {
+    @include clearFix;
+}
+.outer {
+    @include outerStyle;
+}
+.inner {
+    @include innerStyle;
+}
+@media (min-width:769px) {
+    @include generateGrid(true);
+}
+@media (max-width:768px) {
+    @include generateGrid(false);
+}

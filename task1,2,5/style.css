@@ -1,0 +1,148 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #c9c5c5;
+    font-family: "Microsoft Yahei";
+}
+
+header {
+    background-color: darkslategray;
+    width: 100%;
+    position: relative;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+nav li {
+    display:inline-block; 
+    /*
+    width: 60px;
+    padding: 20px 10px;
+    display:block;
+    float:left;
+    text-align:center;
+    */
+}
+nav li a {
+    text-decoration: none;
+    color: pink;
+    font-size: 12px;
+}
+article,aside {
+    /*!!!!!!*/box-shadow 1px 1px 2px 1px #848484;
+    display: block;
+    background-color: white;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border: 1px gray solid;
+}
+article {
+    margin-right: 380px; 
+}
+article img {
+    width: 60%;
+}
+
+h2 {
+    color: gray;
+    font-size: 17px;
+    font-weight: bolder;
+}
+span.author,span.send-time {
+    color: gray;
+    font-size: 12px;
+    line-height: 30px;
+}
+p {
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.project {
+    list-style:none;
+}
+.photos img {
+    width: 150px;
+}
+.photos div {
+    text-align: center;
+    border: 1px gray solid;
+    margin: 10px;
+    width: 170px;
+    display: inline-block;
+}
+
+aside  {
+    float: right;
+    width: 300px;
+}
+aside h2 {
+    color: black;
+    border-left: 2px gray solid;
+    padding-left: 20px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+label {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+    font-weight: 100;
+    padding-right: 9px;
+}
+form div {
+    margin: 10px;
+    font-size: 10px;
+}
+form input {
+    margin-bottom: 5px;
+}
+form span {
+    color: grey;
+    margin-left: 40%;
+}
+textarea {
+    width: 50%;
+    height: 80px;
+    vertical-align:top;
+}
+.submitButton {
+    /* !!!!! */border-style: none;
+    color: white;
+    font-size: 19px;
+    width: 100%;
+    height: 40px;
+    background-color: #3b3bd4;
+    border-radius: 9px;
+}
+
+article table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+article table tr th {
+    color:white;
+    background: #333;
+}
+article table tr td{
+    border:1px solid #ccc;
+}
+article table .bottomTable {
+    background-color: #ccc;
+}
